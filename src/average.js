@@ -23,6 +23,9 @@ const arrayOfNumber = (param) => {
 };
 
 const average = (array) => {
+  if (array.length === 0) {
+    return undefined;
+  }
   if (arrayOfNumber(array)) {
     let sum = 0;
     let media;
